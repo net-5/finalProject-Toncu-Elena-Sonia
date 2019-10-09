@@ -1,0 +1,100 @@
+﻿/*html{
+    padding-left:35px;
+}*/
+body {
+    top: 72px;
+    left: 0px;
+    width: 1280px;
+    height: 600px;
+    background: transparent url('../img/conf 1-1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+/*.navbar.navbar-expand-lg {
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 72px;
+    background: #442359 0% 0% no-repeat padding-box;
+    opacity: 1;
+}*/
+
+/*.text-center p {
+    text-align: left;
+    font: Bold 56px/66px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}*/
+/*.display-4 {
+    top: 206px;
+    left: 549px;
+    width: 182px;
+    height: 19px;
+}*/
+
+/*.class-center img {
+    top: 225px;
+    left: 470px;
+    width: 340px;
+    height: 120px;
+    background: transparent url('img/[dotnetdays]colored-v2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}*/
+
+/*.list-group-item:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.list-group-item {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float: left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+    .list-group-item img {
+        border: 5px solid #f8f8f8;
+    }
+
+.speaker-items img {
+    padding: 1px;
+    margin: 4px 2px;
+    border: solid black;
+}*/
+
+/*.btn.fb {
+    background-color: darkblue;
+    border-radius: 50%;
+    color: white;
+    padding-left: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin:auto;
+    display:inline-block;
+}
+    .btn.yt {
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        padding-left: 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        position: center;
+    }*/
+
+
+/*.col-md-6{
+    color:black;
+}*/
+/*#logo{
+    padding: 50px;
+    margin: 4px 2px;
+    position:center;
+}*/
+

@@ -1,0 +1,146 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Talks>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="container">
+
+        <div>
+            <h1 class="title text-center">TALKS</h1>
+        </div>
+        <div class="space">
+            
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-sm-4">
+                    <div class="talk-items">
+                        <h4>
+                            <a asp-controller="Talks" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                        </h4>
+                        <span class="sub-title">Speaker: @item.Speaker.FullName</span>
+                        <div class="space">
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+@*<span class="sub-title mv">Irina Scurtu</span>
+    <a target="_blank" href="NULLhttps://www.eventbrite.com/e/workshop-deep-dive-in-asp-core-22-tickets-55864731917" class="btn btn-primary">Register</a>
+        </div>
+    <div class="col-lg-3 child workshop">
+        <span class="talk-time">22/02, 14:00 - 18:00</span>
+        <div class="text-big mv fixed">
+            <a class="name" href="/2019/Workshops/Details/2">
+                dotnet with Docker on Linux
+            </a>
+        </div>
+
+
+        <span class="sub-title mv">Andrei Mustata</span>
+        <a target="_blank" href="https://www.eventbrite.com/e/dotnet-with-docker-on-linux-tickets-55864650674" class="btn btn-primary">Register</a>
+    </div>
+    <div class="col-lg-3 child workshop">
+        <span class="talk-time">22/02, 9:00 - 13:00</span>
+        <div class="text-big mv fixed">
+            <a class="name" href="/2019/Workshops/Details/3">
+                Clean Code: Dive beyond the theory
+            </a>
+        </div>
+
+
+        <span class="sub-title mv">Mihaela Ghidersa</span>
+        <a target="_blank" href="https://www.eventbrite.com/e/clean-code-dive-beyond-the-theory-tickets-55864850271" class="btn btn-primary">Register</a>
+    </div>
+    <div class="col-lg-3 child workshop">
+        <span class="talk-time">22/02, 9:00 - 13:00</span>
+        <div class="text-big mv fixed">
+            <a class="name" href="/2019/Workshops/Details/4">
+                Applied serverless: event-driven processing in Azure
+            </a>
+        </div>
+
+
+        <span class="sub-title mv">Andrei Scutariu</span>
+        <a target="_blank" href="https://www.eventbrite.com/e/workshop-azure-serverless-event-processing-tickets-55864704836" class="btn btn-primary">Register</a>
+    </div>*@
+
+
+
+
+@*<div class="container">
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-sm-4">
+                    <div class="talk-items">
+                        <h4>
+                            <a asp-controller="Talks" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                        </h4>
+                        <strong class="designation">Speaker: @item.Speaker.FullName</strong>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>*@
+
+
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SpeakerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Edition)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SpeakerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Edition)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

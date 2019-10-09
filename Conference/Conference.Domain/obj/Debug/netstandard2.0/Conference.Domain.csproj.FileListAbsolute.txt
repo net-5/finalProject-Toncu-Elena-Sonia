@@ -1,0 +1,9 @@
+F:\MVC\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.deps.json
+F:\MVC\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.dll
+F:\MVC\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.pdb
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.csprojAssemblyReference.cache
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.csproj.CoreCompileInputs.cache
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfoInputs.cache
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfo.cs
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.dll
+F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.pdb

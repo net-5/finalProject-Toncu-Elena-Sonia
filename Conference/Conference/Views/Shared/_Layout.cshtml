@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Conference</title>
+
+    <link href="~/css/conferenceStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/lib/bootstrap/dist/css/bootstrap_pulse.css" rel="stylesheet" />
+ 
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="~/img/component.png" alt="logo" class="img-responsive" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-controller="Editions" asp-action="Index">Agenda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Speakers" asp-action="Index">Speakers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Sponsors" asp-action="Index">Sponsors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Talks" asp-action="Index">Talks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Workshops" asp-action="Index">Workshops</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://facebook.com/dotnetdays.ro" target="_blank">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/dotnetdaysro" target="_blank">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://meetup.com/NET-User-Group-Iasi/" target="_blank">
+                            <span class="fa fa-meetup"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+        <div class="space">
+
+        </div>
+        <div class="newsletter">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="registration">Stayed tuned!</h1>
+                    <span class="subtitle white float-right text-right">You’ll be the first to know when things get in motion or we have something new to share.</span>
+                </div>
+
+                <div class="col-md-6">
+                    <input type="email" class="float-left col-sm-12 col-md-6 transparent" id="Email" name="Email" value="" placeholder="Email address*">
+                    <button onclick="subscribe" class="subscribe col-sm-12 col-md-6 btn btn-primary btn-small">Subscribe to our newsletter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space">
+    </div>
+    <footer>
+        <div class="row">
+            <div class="contact col-sm-12 col-md-4">
+                <h4 class="text-center">Links</h4>
+                <ul>
+                    <li>
+                        <a href="mailto:info@dotnetdays.ro">Contact Us</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Privacy">Code of Conduct</a>
+                    </li>
+                    <li>
+                        <a href="">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about col-sm-12 col-md-4">
+                <h4 class="text-center">About Us</h4>
+                <ul>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Privacy">About</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Sponsors" asp-action="Create">Become a sponsor</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="about col-md-4">
+                <h4>Socials</h4>
+
+                <a href="http://facebook.com/dotnetdays.ro" target="_blank">
+                    <span class="fa fa-facebook"></span>
+                </a>
+
+                <a href="https://twitter.com/dotnetdaysro" target="_blank">
+                    <span class="fa fa-twitter"></span>
+                </a>
+
+                <a href="https://meetup.com/NET-User-Group-Iasi/" target="_blank">
+                    <span class="fa fa-meetup"></span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+            </script>
+        </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

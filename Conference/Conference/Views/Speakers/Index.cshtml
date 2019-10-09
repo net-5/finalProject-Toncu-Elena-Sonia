@@ -1,0 +1,220 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Speakers>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-md-center">
+    <h1 class="title text-center">Speakers of Conference</h1>
+</div>
+<div class="space">
+
+</div>
+
+<div class="row text-center">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-sm-4">
+            <div class="speaker-items">
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Istrate-Ciobanu")
+                    {
+                        <img src="~/img/95.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Ionescu")
+                    {
+                        <img src="~/img/96.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Maftei")
+                    {
+                        <img src="~/img/97.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Panainte")
+                    {
+                        <img src="~/img/98.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Marcean")
+                    {
+                        <img src="~/img/99.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Iosub")
+                    {
+                        <img src="~/img/100.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Vasii")
+                    {
+                        <img src="~/img/101.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Iordache")
+                    {
+                        <img src="~/img/102.png" />
+                    }
+                </div>
+                <div class="img-fluid">
+                    @if (@item.FirstName == "Buznea")
+                    {
+                        <img src="~/img/97.png" />
+                    }
+                </div>
+                <h4>
+                    <a asp-controller="Speakers" asp-action="Details" asp-route-id="@item.Id">@item.FullName</a>
+                </h4>
+                <strong class="designation">@item.Position</strong>
+
+            </div>
+            <div>
+                <a href="@item.LinkedIn" target="_blank">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </div>
+        </div>
+    }
+   
+</div>
+
+
+
+
+
+
+@*<h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Position)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Website)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Facebook)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LinkedIn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Skype)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GitHub)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Twitter)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyWebsite)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PageSlug)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Edition)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Website)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Facebook)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LinkedIn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Skype)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GitHub)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Twitter)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyWebsite)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PageSlug)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Edition)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

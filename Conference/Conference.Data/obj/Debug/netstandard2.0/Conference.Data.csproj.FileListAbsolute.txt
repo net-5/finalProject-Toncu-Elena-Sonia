@@ -1,0 +1,12 @@
+F:\MVC\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.deps.json
+F:\MVC\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.dll
+F:\MVC\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.pdb
+F:\MVC\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Domain.dll
+F:\MVC\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Domain.pdb
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csprojAssemblyReference.cache
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csproj.CoreCompileInputs.cache
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.AssemblyInfoInputs.cache
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.AssemblyInfo.cs
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csproj.CopyComplete
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.dll
+F:\MVC\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.pdb

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Editions>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="text-md-center">
+        <h1 class="title text-center">Edition 2020</h1>
+    </div>
+
+<div class="space">
+
+</div>
+
+<div class="row text-center">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-12 col-sm-12">
+            <div class="speaker-items">
+                @if (item.Id == 2)
+                {
+                <div class="text-center">
+                    <a asp-controller="Editions" asp-action="Details" asp-route-id="@item.Id">Info about @item.TagLine</a>
+                </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+

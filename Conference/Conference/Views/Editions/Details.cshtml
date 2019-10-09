@@ -1,0 +1,39 @@
+﻿@model Conference.Models.EditionViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+    <div class="info-details">
+        <h1 class="title text-center">Details about Edition 2020:</h1>
+        <div class="space">
+
+        </div>
+        <dl class="row details text-center">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.TagLine)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.TagLine)
+            </dd>
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Year)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Year)
+            </dd>
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Active)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Active)
+            </dd>
+        </dl>
+       
