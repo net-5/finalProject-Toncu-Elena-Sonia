@@ -7,3 +7,12 @@ F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.A
 F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfo.cs
 F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.dll
 F:\MVC\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.pdb
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.deps.json
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.dll
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\bin\Debug\netstandard2.0\Conference.Domain.pdb
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.csprojAssemblyReference.cache
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.csproj.CoreCompileInputs.cache
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfoInputs.cache
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfo.cs
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.dll
+D:\C#\finalProject-Toncu-Elena-Sonia\Conference\Conference.Domain\obj\Debug\netstandard2.0\Conference.Domain.pdb

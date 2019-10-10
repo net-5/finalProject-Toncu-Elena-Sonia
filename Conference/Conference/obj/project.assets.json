@@ -13116,11 +13116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\MVC\\Conference\\Conference\\Conference.csproj",
+      "projectUniqueName": "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference\\Conference.csproj",
       "projectName": "Conference",
-      "projectPath": "F:\\MVC\\Conference\\Conference\\Conference.csproj",
+      "projectPath": "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference\\Conference.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "F:\\MVC\\Conference\\Conference\\obj\\",
+      "outputPath": "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13139,11 +13139,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\MVC\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
-              "projectPath": "F:\\MVC\\Conference\\Conference.Domain\\Conference.Domain.csproj"
+            "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
+              "projectPath": "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference.Domain\\Conference.Domain.csproj"
             },
-            "F:\\MVC\\Conference\\Conference.Service\\Conference.Service.csproj": {
-              "projectPath": "F:\\MVC\\Conference\\Conference.Service\\Conference.Service.csproj"
+            "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference.Service\\Conference.Service.csproj": {
+              "projectPath": "D:\\C#\\finalProject-Toncu-Elena-Sonia\\Conference\\Conference.Service\\Conference.Service.csproj"
             }
           }
         }

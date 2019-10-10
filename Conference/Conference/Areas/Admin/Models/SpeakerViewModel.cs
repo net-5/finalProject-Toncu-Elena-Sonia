@@ -18,6 +18,7 @@ namespace Conference.Areas.Admin.Models
         [StringLength(15)]
         public string LastName { get; set; }
         //public string FullName { get => FirstName + " " + LastName; }
+        [Required]
         public string Position { get; set; }
         public string Website { get; set; }
         public string Facebook { get; set; }
@@ -27,13 +28,14 @@ namespace Conference.Areas.Admin.Models
         public string Skype { get; set; }
         public string GitHub { get; set; }
         public string Twitter { get; set; }
-        [Required(ErrorMessage ="Please enter the company name!")]
+        [Required]
         public string CompanyName { get; set; }
         public string CompanyWebsite { get; set; }
         [Required]
         [MaxLength(300)]
         public string Description { get; set; }
         public string PageSlug { get; set; }
+        [Required]
         public string Edition { get; set; }
 
 

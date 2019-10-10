@@ -1,4 +1,4 @@
-﻿.body {
+﻿body {
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -20,7 +20,7 @@
 
 ul {
     position: absolute;
-    left: 50%;
+    left: 40%;
 }
 
     .nav-link {
@@ -150,9 +150,10 @@ ul {
     font-weight: bold;
     color: #442359;
 }
-div.align-content-md-center {
+div.row-parent h2.announcement {
     background-color: white;
-    padding: 50px;
+    padding: 80px;
+    position: center;
 }
 
 .speaker-items a {

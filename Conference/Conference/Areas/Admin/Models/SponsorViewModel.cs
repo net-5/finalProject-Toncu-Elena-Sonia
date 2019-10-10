@@ -9,11 +9,13 @@ namespace Conference.Areas.Admin.Models
 {
     public class SponsorViewModel
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string Name { get; set; }
         public string Website { get; set; }
         public string Facebook { get; set; }
+        [Required]
+        [MaxLength(300)]
         public string Description { get; set; }
         public string PageSlug { get; set; }
         public int SponsorTypeId { get; set; }

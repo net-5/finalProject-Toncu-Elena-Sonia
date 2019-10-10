@@ -10,7 +10,7 @@ namespace Conference.Areas.Admin.Models
 {
     public class WorkshopViewModel
     {
-        [Key]
+       
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
@@ -20,6 +20,7 @@ namespace Conference.Areas.Admin.Models
         public string Prerequisites { get; set; }
         public string Requirements { get; set; }
         public int? PlacesAvailable { get; set; }
+        [Required]
         public string Edition { get; set; }
         
         public int SpeakerId { get; set; }
