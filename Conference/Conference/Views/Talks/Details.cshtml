@@ -1,0 +1,88 @@
+﻿@model Conference.Models.TalkViewModel
+@using Conference.Domain.Entities
+
+@{
+    ViewData["Title"] = "Details";
+}
+@{
+    var speakerSelectList = new List<SelectListItem>();
+    var speakers = (List<Speakers>)ViewBag.Speakers;
+}
+
+
+    <div class="details-talks">
+        <h1>Talks - Details</h1>
+        <div class="space">
+
+        </div>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @if (Model.SpeakerId == 1003)
+                {
+                    <img class="img-fluid" src="~/img/95.png" />
+                }
+                @if (Model.SpeakerId == 12003)
+                {
+                    <img class="img-fluid" src="~/img/101.png" />
+                }
+                @if (Model.SpeakerId == 12004)
+                {
+                    <img class="img-fluid" src="~/img/102.png" />
+                }
+                @if (Model.SpeakerId == 2002)
+                {
+                    <img class="img-fluid" src="~/img/96.png" />
+                }
+                @if (Model.SpeakerId == 11004)
+                {
+                    <img class="img-fluid" src="~/img/99.png">
+                }
+                @if (Model.SpeakerId == 3002)
+                {
+                    <img class="img-fluid" src="~/img/97.png" />
+                }
+            </dt>
+            <dd class="col-sm-10">
+
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.SpeakerId)
+            </dt>
+            <dd class="col-sm-10">
+                @foreach (var speaker in speakers)
+                {
+                    @if (speaker.Id == Model.SpeakerId)
+                    {
+                        @speaker.FullName
+                    }
+                }
+
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            @*<dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Edition)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Edition)
+            </dd>*@
+
+        </dl>
+
+    </div>
+
+<div>
+   @* @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a  asp-action="Index">Back to List</a>
+</div>

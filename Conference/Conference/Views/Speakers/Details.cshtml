@@ -1,0 +1,158 @@
+﻿@model Conference.Models.SpeakerViewModel
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="details">
+    <h1 class="title">Details about speaker</h1>
+    <div>
+        <hr />
+        <dl class="row details">
+            <dt class="col-sm-2">
+
+                @if (Model.FirstName == "Istrate-Ciobanu")
+                {
+
+                    <img class="img-fluid" src="~/img/95.png" />
+                }
+                @if (Model.FirstName == "Ionescu")
+                {
+                    <img class="img-fluid" src="~/img/96.png" />
+                }
+                @if (Model.FirstName == "Maftei")
+                {
+                    <img class="img-fluid" src="~/img/97.png" />
+                }
+                @if (Model.FirstName == "Panainte")
+                {
+                    <img class="img-fluid" src="~/img/98.png" />
+                }
+                @if (Model.FirstName == "Marcean")
+                {
+                    <img class="img-fluid" src="~/img/99.png">
+                }
+                @if (Model.FirstName == "Iosub")
+                {
+                    <img class="img-fluid" src="~/img/100.png" />
+                }
+                @if (Model.FirstName == "Vasii")
+                {
+                    <img class="img-fluid" src="~/img/101.png" />
+                }
+                @if (Model.FirstName == "Iordache")
+                {
+                    <img class="img-fluid" src="~/img/102.png" />
+                }
+                @if (Model.FirstName == "Buznea")
+                {
+                    <img class="img-fluid" src="~/img/97.png" />
+                }
+            </dt>
+            <dd class="col-sm-10">
+               
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Position)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Position)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Website)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Website)
+
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Facebook)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Facebook)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10" id="email">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LinkedIn)
+            </dt>
+            <dd class="col-sm-10">  
+                <a href=@Html.DisplayFor(model => model.LinkedIn) target="_blank">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Skype)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Skype)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.GitHub)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.GitHub)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Twitter)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Twitter)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CompanyName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CompanyWebsite)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CompanyWebsite)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PageSlug)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PageSlug)
+            </dd>
+            @*<dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Edition)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Edition)
+            </dd>*@
+
+        </dl>
+    </div>
+    <div>
+        @*@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

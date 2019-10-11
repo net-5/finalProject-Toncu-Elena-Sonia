@@ -1,0 +1,330 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../img/conf 1-1.png");
+    opacity: 1;
+}
+
+.navbar.navbar-expand-lg {
+    padding: 0px;
+    background: #442359;
+    opacity: 1;
+}
+
+.nav-item {
+    padding-right: .3rem;
+    padding-left: .6rem;
+    position:center;
+}
+
+ul {
+    position: absolute;
+    left: 30%;
+}
+
+.nav-link {
+    text-align: center;
+    text-transform: uppercase;
+    font: Light 10px/12px Roboto bold;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.fa.fa-facebook {
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #593196;
+}
+.fa-facebook:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.fa.fa-twitter {
+    padding: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #593196;
+}
+.fa-twitter:hover {
+    opacity: 0.7;
+ }
+.fa-twitter {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.fa.fa-meetup {
+    padding: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #593196;
+}
+.fa-meetup:hover {
+    opacity: 0.7;
+}
+
+.fa-meetup {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.dots{
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.dots1{
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.logo{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.conference-heading-main {
+    position: absolute;
+    top: 60%;
+    left: 54%;
+    margin-top: -50px;
+    margin-left: -100px;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+}
+
+.location {
+    position: absolute;
+    top: 72%;
+    left: 44%;
+    margin-top: -50px;
+    margin-left: -100px;
+    color: #FFFFFF;
+}
+
+.register {
+    position: absolute;
+    top: 77%;
+    left: 55%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background: #6EC2E8;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.btn.btn-large.btn-main {
+    font-weight: bold;
+    color: #442359;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+}
+
+.row-parent {
+    margin-top: 700px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #442359;
+}
+div.row-parent, h2.announcement {
+    background-color: white;
+    padding: 50px;
+    position: center;
+    font: Bold 32px/38px Roboto;
+    font-size:50px;
+    letter-spacing:2;
+}
+
+.speaker-items,a {
+    text-align: center;
+    font: Bold 42px/48px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.speaker-items,h4, a {
+    text-align: center;
+    font-family: Arial Italic;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.designation {
+    text-align: center;
+    font-family:Arial Italic;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size:20px;
+}
+table.table {
+    color: #FFFFFF;
+}
+.fa.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.sponsor-items,a {
+    text-align: center;
+    font: Bold 32px/38px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+div.img-fluid img{
+    border: solid;
+    border-color: black;
+}
+img.img-fluid {
+    border: solid;
+    border-color: black;
+}
+h1.title {
+    font: Bold 34px/40px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.container-footer{
+    background-image:url("../img/conf 2.png");
+}
+h1.registration {
+    text-align: right;
+    font: Bold 56px/66px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+span.subtitle {
+    text-align: right;
+    font: Light 16px/19px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+#Email {
+    background: white;
+    width: 346px;
+    height: 35px;
+}
+.btn.btn-primary.btn-small {
+    /*padding: 1.6rem;*/
+    margin-top: 1.2rem;
+    margin-right:1rem;
+}
+div.space {
+    margin-top: 5.2rem;
+}
+.contact.col-md-4 {
+    font: Light 12px/14px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+li, a {
+    font: Light 10px/12px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+    padding: 0px;
+    text-decoration:none;
+}
+.contact.col-sm-12.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.about.col-md-4 {
+    font: Light 12px/14px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+footer {
+    background-color: #442359;
+    opacity: 1;
+    margin-top:10px;
+    padding:130px 50px;
+}
+dl {
+    font: Light 12px/14px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+div.details{
+    color: #FFFFFF;
+}
+div.details-talks{
+    color: #FFFFFF;
+}
+
+div.talk-items{
+    color: #FFFFFF;
+    text-align: center;
+    font: Bold 32px/30px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sub-title {
+    color: #FFFFFF;
+    font: italic 20px/20px Roboto;
+}
+#demo {
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+#demo { 
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: #6EC2E8;
+}
+
+.control-label {
+    color: #FFFFFF;
+}
+.form-check-label {
+    color: #FFFFFF;
+    font: Bold Roboto;
+}
+p{
+    color: #FFFFFF;
+}
+b {
+    color: #FFFFFF;
+}

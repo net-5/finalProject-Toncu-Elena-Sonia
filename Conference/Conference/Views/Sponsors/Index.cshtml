@@ -1,0 +1,170 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Sponsors>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="title text-center">SPONSORS</h1>
+<div class="space">
+
+</div>
+<div class="container">
+    <div class="row text-center">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-md-6 col-sm-6">
+                <div class="sponsor-items">
+                    <div class="img-fluid">
+                        @if (@item.Name == "Orange")
+                        {
+                            <img src="~/img/orange_l.png" alt="Orange" />
+                        }
+                    </div>
+                    <div class="img-fluid">
+                        @if (@item.Name == "Vodafone")
+                        {
+                            <img src="~/img/vodafone_l.png" class="img-fluid" alt="Vodafone" />
+                        }
+                    </div>
+                    <div class="img-fluid">
+                        @if (@item.Name == "Continental")
+                        {
+                            <img src="~/img/continetal_l.png" class="img-fluid" alt="Continental" />
+                        }
+                    </div>
+                    <div class="img-fluid">
+                        @if (@item.Name == "BRD")
+                        {
+                            <img src="~/img/brd_l.png" class="img-fluid" alt="BRD Romania" />
+                        }
+                    </div>
+                    <div class="img-fluid">
+                        @if (@item.Name == "Eon")
+                        {
+                            <img src="~/img/eon_l.png" class="img-fluid" alt="Eon Romania" />
+                        }
+                    </div>
+                    <div class="img-fluid">
+                        @if (@item.Name == "Amazon")
+                        {
+                            <img src="~/img/amazon_l.png" class="img-fluid" alt="Amazon" />
+                        }
+                    </div>
+                    <h4>
+                        <a asp-controller="Sponsors" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                    </h4>
+                </div>
+            </div>
+
+        }
+    </div>
+
+    @*<section class="list-images">
+            <div class="row-sponsor text-center">
+                <div class="col-md-12 col-sm-12">
+                    <div class="sponsor-items">
+                        <img src="~/img/orange_l.png" class="img-responsive" alt="Orange" />
+                        <img src="~/img/vodafone_l.png" class="img-responsive" alt="Vodafone" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12 col-sm-12">
+                    <div class="sponsor-items">
+                        <img src="~/img/brd_l.png" class="img-responsive" alt="BRD Romania" />
+                        <img src="~/img/eon_l.png" class="img-responsive" alt="Eon Romania" />
+
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12 col-sm-12">
+                    <div class="sponsor-items">
+                        <img src="~/img/continetal_l.png" class="img-responsive" alt="Continental" />
+                        <img src="~/img/amazon_l.png" class="img-responsive" alt="Amazon" />
+                    </div>
+                </div>
+
+
+            </div>
+        </section>*@
+</div>
+
+
+
+@*<h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Website)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Facebook)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PageSlug)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SponsorTypeId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Active)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Edition)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Website)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Facebook)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PageSlug)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SponsorTypeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Edition)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@
