@@ -20,16 +20,17 @@
 
 ul {
     position: absolute;
-    left: 40%;
+    left: 30%;
 }
 
-    .nav-link {
-    text-align:center;
+.nav-link {
+    text-align: center;
     text-transform: uppercase;
-    font: Light 16px/18px Roboto bold;
+    font: Light 10px/12px Roboto bold;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+    font-size: 20px;
 }
 
 .fa.fa-facebook {
@@ -81,7 +82,7 @@ ul {
     opacity: 1;
 }
 
-.dots img {
+.dots{
     position: absolute;
     top: 30%;
     left: 52%;
@@ -89,7 +90,7 @@ ul {
     margin-left: -100px;
 }
 
-.dots1 img {
+.dots1{
     position: absolute;
     top: 90%;
     left: 52%;
@@ -97,7 +98,7 @@ ul {
     margin-left: -100px;
 }
 
-.logo img {
+.logo{
     position: absolute;
     top: 45%;
     left: 45%;
@@ -144,32 +145,42 @@ ul {
     text-align: center;
 }
 
-.row-parent h2 {
+.row-parent {
     margin-top: 700px;
     font-size: 50px;
     font-weight: bold;
     color: #442359;
 }
-div.row-parent h2.announcement {
+div.row-parent, h2.announcement {
     background-color: white;
-    padding: 80px;
+    padding: 50px;
     position: center;
+    font: Bold 32px/38px Roboto;
+    font-size:50px;
+    letter-spacing:2;
 }
 
-.speaker-items a {
+.speaker-items,a {
     text-align: center;
-    font: Bold 32px/38px Roboto;
+    font: Bold 42px/48px Roboto;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
 }
-
+.speaker-items,h4, a {
+    text-align: center;
+    font-family: Arial Italic;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
 .designation {
     text-align: center;
     font-family:Arial Italic;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+    font-size:20px;
 }
 table.table {
     color: #FFFFFF;
@@ -179,7 +190,7 @@ table.table {
     color: white;
 }
 
-.sponsor-items a {
+.sponsor-items,a {
     text-align: center;
     font: Bold 32px/38px Roboto;
     letter-spacing: 0;
@@ -236,11 +247,14 @@ div.space {
     color: #FFFFFF;
     opacity: 1;
 }
-li a {
-    font: Light 12px/14px Roboto;
+li, a {
+    font: Light 10px/12px Roboto;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+    font-size: 20px;
+    padding: 0px;
+    text-decoration:none;
 }
 .contact.col-sm-12.col-md-4 {
     position: relative;
@@ -257,7 +271,8 @@ li a {
 footer {
     background-color: #442359;
     opacity: 1;
-    padding:60px 20px;
+    margin-top:10px;
+    padding:130px 50px;
 }
 dl {
     font: Light 12px/14px Roboto;
@@ -265,14 +280,14 @@ dl {
     color: #FFFFFF;
     opacity: 1;
 }
-div.details h1 {
+div.details{
     color: #FFFFFF;
 }
-div.details-talks h1 {
+div.details-talks{
     color: #FFFFFF;
 }
 
-div.talk-items a {
+div.talk-items{
     color: #FFFFFF;
     text-align: center;
     font: Bold 32px/30px Roboto;
@@ -299,12 +314,7 @@ div.talk-items a {
     text-transform: uppercase;
     color: #6EC2E8;
 }
-div.details-workshop h1 {
-    color: #FFFFFF;
-}
-div.becomeSponsor h1 {
-    color: #FFFFFF;
-}
+
 .control-label {
     color: #FFFFFF;
 }
